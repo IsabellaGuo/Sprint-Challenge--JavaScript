@@ -75,7 +75,7 @@ const graduates = [
 Once you have the new array created, sort the universities alphabetically and log the result. */
 const universities = [];
 for (i=0; i<graduates.length; i++){
-  graduates[i].university;
+  
   universities.push(graduates[i].university);
   universities.sort();
 }
@@ -96,7 +96,7 @@ console.log(contactInfo);
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
 const unisWithUni = [];
 for (i = 0; i < graduates.length; i++) {
-  graduates[i].university;
+  
   if (graduates[i].university.includes("Uni"))
     unisWithUni.push(graduates[i].university);
 
@@ -138,8 +138,8 @@ The zoos need a list of all their animal's names (animal_name only) converted to
 
 */
 
-const lowCaseAnimalNames = [];
-const lowCaseAnimalNames = zooAnimals.map(function(item){
+let lowCaseAnimalNames = [];
+lowCaseAnimalNames=zooAnimals.map(function(item){
 	return item.animal_name.toLowerCase();
 })
 console.log(lowCaseAnimalNames);
@@ -152,7 +152,7 @@ The zoos are concerned about animals with a lower population count. Using filter
 const lowPopulationAnimals = [];
 zooAnimals.filter(element => {
   if (element.population < 5){
-    lowPopulationAnimals.push(element.animal_name)
+    lowPopulationAnimals.push(element)
   }
 })
 console.log(lowPopulationAnimals);
