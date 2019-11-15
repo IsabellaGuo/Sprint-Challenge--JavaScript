@@ -97,9 +97,9 @@ console.log(contactInfo);
 const unisWithUni = [];
 for (i = 0; i < graduates.length; i++) {
   graduates[i].university;
-  if (unisWithUni=graduates[i].university.includes("Uni")){
+  if (graduates[i].university.includes("Uni"))
     unisWithUni.push(graduates[i].university);
-}
+
 }
 console.log(unisWithUni);
 
