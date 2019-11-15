@@ -39,6 +39,7 @@ function greeting (firstName, lastName){
 
 // Explanation: 
 
+Internal is a variable inside myFunction. NestedFunction is a child of myFunction, so it can inherit the variable from parent.
 
 const external = "I'm outside the function";
 
